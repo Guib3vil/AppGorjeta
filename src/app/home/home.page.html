@@ -1,20 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      App Gorjeta
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-item>
+    <ion-input [(ngModel)]="V" label="Valor" labelPlacement="floating" placeholder="Digite o valor do serviço"></ion-input>
+    </ion-item>
+    <ion-radio-group [(ngModel)]="GR">
+    <ion-item>
+    <ion-label>10%</ion-label>
+    <ion-radio value="10"></ion-radio>
+    </ion-item>
+    <ion-item>
+    <ion-label>15%</ion-label>
+    <ion-radio value="15"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>20%</ion-label>
+      <ion-radio value="20"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <ion-button expand="block" (click)="calcularGorjeta()">Calcular</ion-button>
+    </ion-content>
