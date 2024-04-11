@@ -1,0 +1,7 @@
+{
+  "name": "AppGorjeta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
